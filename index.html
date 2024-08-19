@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+    <div id="hamburger-menu">
+        &#9776;
+    </div>
+
     <div class="bottom-nav">
         <!-- Нижний навигатор -->
         <ul>
             <li><a href="index.html">Памятка</a></li>
-            <li><a href="punish-table.html">Таблица наказаний</a></li>
-            <li><a href="punish-table-1.8.html">Таблица 1.8</a></li>
-            <li><a href="punish-table-1.11.html">Таблица 1.11</a></li>
+            <li><a href="punish-table.html">Наказания</a></li>
+            <li><a href="punish-table-1.8.html">1.8</a></li>
+            <li><a href="punish-table-1.11.html">1.11</a></li>
         </ul>
     </div>
         <!-- Левый навигатор -->
@@ -82,7 +86,7 @@
                 <p> <span class="c-red">Провокация на конфликт </span> - любая форма колкостей по отношению к пользователям нашего сервера (такие действия должны пресекаться на корню, если вы смогли предотвратить конфликт, наказание смягчается вплоть до нуля).</p>
                 </br>
                 <p class="c-red">Примеры:</p></br>
-                <p class="tab-indent"><span class="grey-bg">Еблан</span>,<span class="grey-bg">долбоеб</span>,<span class="grey-bg">хуесос</span>,<span class="grey-bg">уебан</span>,<span class="grey-bg">мразь</span>,<span class="grey-bg">блядота тупая</span> и т.д.</p></br>
+                <p class="tab-indent"><span class="grey-bg">Еблан</span>,<span class="grey-bg">долбоеб</span>,<span class="grey-bg">хуесос</span>,<span class="grey-bg">уебан</span>,<span class="grey-bg">мразь</span> и т.д.</p></br>
                 <p>Также в данном пункте важно заметить, что если человека спровоцировали на нарушение данного правила, то наказание либо не выдается либо же выдается в маленькой мере.</p></br>
                 <p>Стоит помнить! Если вы находитесь не на рабочем месте(не являетесь ведущим клоза), а просто участвуете в чужом клозе/играете в своем и вас начинают оскорблять, то это относиться к пункту <span class="c-red">1.1</span>. То есть если вас оскорбляли как игрока - <span class="c-red">1.1</span>.</p>
             </div></br>
@@ -404,6 +408,14 @@
     </div>
 
 </div>
+
+<!-- JavaScript код -->
+<script>
+    document.getElementById("hamburger-menu").addEventListener("click", function() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("show");
+    });
+</script>
 
 </body>
 </html>

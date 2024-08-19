@@ -55,7 +55,6 @@ td:first-child {
 td:nth-child(2) {
     background-color: #262626;
     padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-    white-space: nowrap; /* Запрещает перенос текста на новую строку */
     width: 35%;
 }
 
@@ -171,4 +170,275 @@ td:nth-child(3) {
 
 a {
     text-decoration: none;
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Стили для таблицы */
+    .rules1 {
+        background-color: #262626;
+        padding: 20px;
+        width: 100%; /* Делает таблицу шире */
+        max-width: 1200px; /* Ограничивает максимальную ширину таблицы */
+    }
+
+    table {
+        width: 100%; /* Устанавливает ширину таблицы на 100% от .rules */
+        border-collapse: collapse;
+        margin: 0 auto; /* Дополнительно центрирует таблицу */
+        table-layout: fixed; /* Фиксированная ширина столбцов */
+    }
+
+    td {
+        border: 1px solid #cccccc;
+        padding: 10px; /* Установите фиксированный отступ внутри ячейки */
+        line-height: 1;
+        box-sizing: border-box; /* Включает padding в ширину ячейки */
+        word-wrap: break-word; /* Разбивает длинные слова */
+    }
+
+
+    /* Основной контент */
+    #content {
+        margin-left: 20px; /* Немного отступаем контент от левого края */
+        padding: 20px;
+        font-size: 14px;
+        flex: 1; 
+    }
+
+    /* Навигация снизу */
+    .bottom-nav {
+        background-color: #262626;
+        color: #ffffff;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+    }
+
+    .bottom-nav ul li {
+        margin: 0 10px; /* Отступы между пунктами меню */
+    }
+
+    /* НОВОЕ */
+    .bottom-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Выстраивает пункты меню в строку */
+        justify-content: center; /* Центрирует пункты меню */
+    }
+    
+    
+    .bottom-nav ul li a {
+        color: #ffffff; /* Цвет ссылок */
+        text-decoration: none; /* Убирает подчеркивание */
+        padding: 10px 20px; /* Отступы внутри ссылки */
+        border: 1px solid #999999; /* Обводка вокруг кнопки */
+        border-radius: 5px; /* Закругление углов обводки */
+        display: inline-block; /* Превращает ссылку в кнопку */
+    }
+    
+    .bottom-nav ul li a:hover {
+        color: #e0e0e0; /* Цвет текста при наведении */
+        background-color: #414141; /* Цвет фона при наведении */
+        border-color: #333; /* Цвет обводки при наведении */
+    }
+
+    /* Установить фиксированные отступы для ячейки */
+    td:first-child {
+        text-align: center;
+        background-color: #262626;
+        padding: 5px 5px; /* Отступы сверху/снизу и слева/справа */
+        white-space: nowrap; /* Запрещает перенос текста на новую строку */
+        width: 10%; /* Ширина будет зависеть от размера текста */
+    }
+
+
+    /* Установить фиксированную ширину второго столбца */
+    td:nth-child(2) {
+        background-color: #262626;
+        padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
+        width: 45%;
+    }
+
+    /* Третий столбец растягивается по ширине */
+    td:nth-child(3) {
+        background-color: #262626;
+        padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
+        width: 30%; /* Дает возможность столбцу растягиваться */
+        text-align: center;
+    }
+
+    .number {
+        font-size: 15px;
+        line-height: 1;
+        color: beige;
+    }
+
+    .two-column {
+        font-size: 14px;
+    }
+
+    .three-column {
+        font-size: 14px;
+    }
+
+    .grey-bg {
+        background-color: #3f3f41;
+        font-size: 14px;
+        padding: 2px 5px;
+        border-radius: 5px;
+    }
+
+    .name-table {
+        color: beige;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #intro-table {
+        color: beige;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    #note-table {
+        color: rgb(175, 175, 169);
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .color-blue {
+        color: #3b5af5;
+        font-size: 12px;
+    }
+    
+    .color-orange {
+        color: #ff8800;
+        font-size: 14px;
+    }
+    
+    .color-red {
+        color: red;
+        font-size: 14px;
+    }
+    
+    .color-yellow {
+        color: #e6d862;
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    /* Скрываем сайдбар по умолчанию */
+
+    #sidebar {
+        width: 200px;
+        background-color: #2e2e2e;
+        color: #ffffff;
+        padding: 10px;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+        left: -250px; /* Скрывает сайдбар за левым краем экрана */
+        transition: left 0.3s ease; /* Анимация для плавного открытия */
+        z-index: 1000; /* Устанавливает уровень Z, чтобы быть выше другого контента */
+    }
+
+    /* Показать сайдбар при добавлении класса show */
+    #sidebar.show {
+        left: 0; /* Перемещает сайдбар на экран */
+    }
+
+    /* Стили для гамбургер меню */
+    #hamburger-menu {
+        font-size: 30px;
+        cursor: pointer;
+        padding: 15px;
+
+        color: white;
+        position: fixed;
+        top: 1px;
+        left: -5px;
+        
+        z-index: 1001; /* Поверх всех элементов */
+    }
+
+    /* Основной контент */
+    #content {
+        margin-left: 20px; /* Немного отступаем контент от левого края */
+        padding: 20px;
+        font-size: 14px;
+        flex: 1; 
+    }
+
+    /* Навигация снизу */
+    .bottom-nav {
+        background-color: #262626;
+        color: #ffffff;
+        padding: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1000;
+    }
+
+    .bottom-nav ul li {
+        margin: 0 5px; /* Отступы между пунктами меню */
+    }
+
+    /* НОВОЕ */
+    .bottom-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex; /* Выстраивает пункты меню в строку */
+        justify-content: center; /* Центрирует пункты меню */
+    }
+    
+    
+    .bottom-nav ul li a {
+        color: #ffffff; /* Цвет ссылок */
+        text-decoration: none; /* Убирает подчеркивание */
+        padding: 7px 12px; /* Отступы внутри ссылки */
+        border: 1px solid #999999; /* Обводка вокруг кнопки */
+        border-radius: 5px; /* Закругление углов обводки */
+        display: inline-block; /* Превращает ссылку в кнопку */
+    }
+    
+    .bottom-nav ul li a:hover {
+        color: #e0e0e0; /* Цвет текста при наведении */
+        background-color: #414141; /* Цвет фона при наведении */
+        border-color: #333; /* Цвет обводки при наведении */
+    }
+    
+    #sidebar h2 {
+        font-size: 20px;
+    }
+
+    #sidebar ul li a {
+        font-size: 14px;
+    }
+
+    .top-nav a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .bottom-nav ul li a {
+        font-size: 14px;
+    }
+
+    .name-table {
+        color: beige;
+        text-align: center;
+        font-size: 25px;
+    }
 }
