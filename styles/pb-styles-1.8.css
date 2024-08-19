@@ -1,0 +1,184 @@
+body {
+    background-color: #262626;
+    color: #9f9f9f;
+    font-family: Arial, sans-serif;
+}
+
+.number {
+    font-size: 25px;
+    line-height: 1;
+    color: #EEEEEE;
+}
+
+.notes {
+    color: #EEEEEE;
+    text-align: center;
+    font-size: 25px;
+}
+
+.notes-text {
+    color: #9f9f9f;
+    font-size: 20px;
+}
+
+/* Контейнер для центрирования содержимого */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* Стили для таблицы */
+.rules1 {
+    background-color: #262626;
+    padding: 20px;
+    width: 90%; /* Делает таблицу шире */
+    max-width: 1200px; /* Ограничивает максимальную ширину таблицы */
+}
+
+table {
+    width: 100%; /* Устанавливает ширину таблицы на 100% от .rules */
+    border-collapse: collapse;
+    margin: 0 auto; /* Дополнительно центрирует таблицу */
+    table-layout: fixed; /* Фиксированная ширина столбцов */
+
+}
+
+td {
+    border: 1px solid #cccccc;
+    padding: 10px; /* Установите фиксированный отступ внутри ячейки */
+    line-height: 1;
+    box-sizing: border-box; /* Включает padding в ширину ячейки */
+    word-wrap: break-word; /* Разбивает длинные слова */
+}
+
+/* Установить фиксированные отступы для ячейки */
+td:first-child {
+    text-align: center;
+    background-color: #262626;
+    padding: 15px 5px; /* Отступы сверху/снизу и слева/справа */
+    width: 25%; /* Ширина будет зависеть от размера текста */
+}
+
+
+/* Установить фиксированную ширину второго столбца */
+td:nth-child(2) {
+    background-color: #262626;
+    padding: 15px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 40%;
+}
+
+/* Третий столбец растягивается по ширине */
+td:nth-child(3) {
+    background-color: #262626;
+    padding: 15px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 25%; /* Дает возможность столбцу растягиваться */
+    text-align: center;
+}
+
+/* Нижняя навигация */
+.top-nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение кнопок */
+}
+.top-nav a {
+    flex-grow: 1; /* Каждый элемент будет занимать равную долю */
+    text-align: center;
+    color: white;
+    padding: 14px 0; /* Убираем горизонтальные отступы и делаем кнопки по центру */
+    text-decoration: none;
+}
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Стили для нижнего навигатора */
+.bottom-nav {
+    background-color: #262626; /* Цвет фона нижнего навигатора */
+    color: #ffffff; /* Цвет текста */
+    padding: 10px; /* Отступы */
+    width: 100%; /* Ширина на всю доступную область */
+    position: fixed; /* Закрепляет навигатор внизу страницы */
+    bottom: 0; /* Прилегает к нижней части страницы */
+    z-index: 1000; /* Устанавливает уровень Z, чтобы быть выше другого контента */
+}
+
+.bottom-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Выстраивает пункты меню в строку */
+    justify-content: center; /* Центрирует пункты меню */
+}
+
+.bottom-nav ul li {
+    margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+.bottom-nav ul li a {
+    color: #ffffff; /* Цвет ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+    padding: 10px 20px; /* Отступы внутри ссылки */
+    border: 1px solid #999999; /* Обводка вокруг кнопки */
+    border-radius: 5px; /* Закругление углов обводки */
+    display: inline-block; /* Превращает ссылку в кнопку */
+}
+
+.bottom-nav ul li a:hover {
+    color: #e0e0e0; /* Цвет текста при наведении */
+    background-color: #414141; /* Цвет фона при наведении */
+    border-color: #333; /* Цвет обводки при наведении */
+}
+
+.color-blue {
+    color: #3b5af5;
+}
+
+.color-orange {
+    color: #ff8800;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-yellow {
+    color: #e6d862;
+}
+
+.grey-bg {
+    background-color: #3f3f41;
+    font-size: 16px;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.name-table {
+    color: beige;
+    text-align: center;
+    font-size: 35px;
+}
+
+#intro-table {
+    color: beige;
+    text-align: center;
+    font-size: 18px;
+}
+
+#note-table {
+    color: rgb(175, 175, 169);
+    text-align: center;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
