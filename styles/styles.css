@@ -289,7 +289,12 @@ body {
     padding-left: 2em;
 }
 
-.name-page h1{
+.name-page h1 {
+    color: white;
+    text-align: center;
+}
+
+.name-page h3 {
     color: white;
     text-align: center;
 }
