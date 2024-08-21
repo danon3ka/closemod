@@ -2,68 +2,7 @@ body {
     background-color: #262626;
     color: #9f9f9f;
     font-family: Arial, sans-serif;
-}
-
-.number {
-    font-size: 18px;
-    line-height: 1;
-    color: beige;
-}
-
-/* Контейнер для центрирования содержимого */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-/* Стили для таблицы */
-.rules1 {
-    background-color: #262626;
-    padding: 20px;
-    width: 80%; /* Делает таблицу шире */
-    max-width: 1200px; /* Ограничивает максимальную ширину таблицы */
-}
-
-table {
-    width: 100%; /* Устанавливает ширину таблицы на 100% от .rules */
-    border-collapse: collapse;
-    margin: 0 auto; /* Дополнительно центрирует таблицу */
-    table-layout: fixed; /* Фиксированная ширина столбцов */
-}
-
-td {
-    border: 1px solid #cccccc;
-    padding: 10px; /* Установите фиксированный отступ внутри ячейки */
-    line-height: 1;
-    box-sizing: border-box; /* Включает padding в ширину ячейки */
-    word-wrap: break-word; /* Разбивает длинные слова */
-}
-
-/* Установить фиксированные отступы для ячейки */
-td:first-child {
-    text-align: center;
-    background-color: #262626;
-    padding: 5px 5px; /* Отступы сверху/снизу и слева/справа */
-    white-space: nowrap; /* Запрещает перенос текста на новую строку */
-    width: 5%; /* Ширина будет зависеть от размера текста */
-}
-
-
-/* Установить фиксированную ширину второго столбца */
-td:nth-child(2) {
-    background-color: #262626;
-    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-    width: 35%;
-}
-
-/* Третий столбец растягивается по ширине */
-td:nth-child(3) {
-    background-color: #262626;
-    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-    width: 40%; /* Дает возможность столбцу растягиваться */
-    text-align: center;
+    margin: 0;
 }
 
 /* Нижняя навигация */
@@ -127,6 +66,62 @@ td:nth-child(3) {
     border-color: #333; /* Цвет обводки при наведении */
 }
 
+/* Контейнер для центрирования содержимого */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+/* Стили для таблицы */
+.rules1 {
+    background-color: #262626;
+    padding: 20px;
+    width: 80%; /* Делает таблицу шире */
+    max-width: 1200px; /* Ограничивает максимальную ширину таблицы */
+}
+
+table {
+    width: 100%; /* Устанавливает ширину таблицы на 100% от .rules */
+    border-collapse: collapse;
+    margin: 0 auto; /* Дополнительно центрирует таблицу */
+    table-layout: fixed; /* Фиксированная ширина столбцов */
+}
+
+td {
+    border: 1px solid #cccccc;
+    padding: 10px; /* Установите фиксированный отступ внутри ячейки */
+    line-height: 1;
+    box-sizing: border-box; /* Включает padding в ширину ячейки */
+    word-wrap: break-word; /* Разбивает длинные слова */
+}
+
+/* Установить фиксированные отступы для ячейки */
+td:first-child {
+    text-align: center;
+    background-color: #262626;
+    padding: 5px 5px; /* Отступы сверху/снизу и слева/справа */
+    white-space: nowrap; /* Запрещает перенос текста на новую строку */
+    width: 5%; /* Ширина будет зависеть от размера текста */
+}
+
+
+/* Установить фиксированную ширину второго столбца */
+td:nth-child(2) {
+    background-color: #262626;
+    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 35%;
+}
+
+/* Третий столбец растягивается по ширине */
+td:nth-child(3) {
+    background-color: #262626;
+    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 40%; /* Дает возможность столбцу растягиваться */
+    text-align: center;
+}
+
 .color-blue {
     color: #3b5af5;
 }
@@ -166,6 +161,12 @@ td:nth-child(3) {
     color: rgb(175, 175, 169);
     text-align: center;
     font-size: 15px;
+}
+
+.number {
+    font-size: 18px;
+    line-height: 1;
+    color: beige;
 }
 
 a {
