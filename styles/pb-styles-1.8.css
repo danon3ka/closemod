@@ -2,7 +2,6 @@ body {
     background-color: #262626;
     color: #9f9f9f;
     font-family: Arial, sans-serif;
-    margin: 0;
 }
 
 /* Нижняя навигация */
@@ -52,20 +51,20 @@ body {
 }
 
 .bottom-nav ul li a {
-    color: #e0e0e0; /* Цвет текста как при наведении */
-    background-color: #414141; /* Цвет фона как при наведении */
+    color: #ffffff; /* Цвет ссылок */
     text-decoration: none; /* Убирает подчеркивание */
     padding: 10px 20px; /* Отступы внутри ссылки */
-    border: 1px solid #333; /* Цвет обводки как при наведении */
+    border: 1px solid #999999; /* Обводка вокруг кнопки */
     border-radius: 5px; /* Закругление углов обводки */
     display: inline-block; /* Превращает ссылку в кнопку */
 }
 
 .bottom-nav ul li a:hover {
-    color: #ffffff; /* Затемненный цвет текста при наведении */
-    background-color: #414141; /* Затемненный цвет фона при наведении */
-    border-color: #222; /* Затемненный цвет обводки при наведении */
+    color: #e0e0e0; /* Цвет текста при наведении */
+    background-color: #414141; /* Цвет фона при наведении */
+    border-color: #333; /* Цвет обводки при наведении */
 }
+<<<<<<< HEAD
 
 /* Контейнер для центрирования содержимого */
 .container {
@@ -79,7 +78,7 @@ body {
 .rules1 {
     background-color: #262626;
     padding: 20px;
-    width: 100%; /* Делает таблицу шире */
+    width: 90%; /* Делает таблицу шире */
     max-width: 1200px; /* Ограничивает максимальную ширину таблицы */
 }
 
@@ -88,6 +87,7 @@ table {
     border-collapse: collapse;
     margin: 0 auto; /* Дополнительно центрирует таблицу */
     table-layout: fixed; /* Фиксированная ширина столбцов */
+
 }
 
 td {
@@ -98,30 +98,32 @@ td {
     word-wrap: break-word; /* Разбивает длинные слова */
 }
 
-/* Стили для первого столбца */
+/* Установить фиксированные отступы для ячейки */
 td:first-child {
     text-align: center;
     background-color: #262626;
-    padding: 5px 5px; /* Отступы сверху/снизу и слева/справа */
-    white-space: nowrap; /* Запрещает перенос текста на новую строку */
-    width: 20%; /* Устанавливает ширину первого столбца */
+    padding: 15px 5px; /* Отступы сверху/снизу и слева/справа */
+    width: 20%; /* Ширина будет зависеть от размера текста */
 }
 
-/* Стили для второго столбца (теперь это последний столбец) */
+
+/* Установить фиксированную ширину второго столбца */
 td:nth-child(2) {
     background-color: #262626;
-    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-    width: 60%; /* Устанавливает ширину второго столбца */
+    padding: 15px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 45%;
 }
 
 /* Третий столбец растягивается по ширине */
 td:nth-child(3) {
-    text-align: center;
     background-color: #262626;
-    padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-    width: 20%; /* Дает возможность столбцу растягиваться */
+    padding: 15px auto; /* Отступы сверху/снизу и слева/справа */
+    width: 25%; /* Дает возможность столбцу растягиваться */
+    text-align: center;
 }
 
+=======
+>>>>>>> ea7b34c1dc6375077d4f049dc30d6f60cbf2ab21
 .color-blue {
     color: #3b5af5;
 }
@@ -154,35 +156,34 @@ td:nth-child(3) {
 #intro-table {
     color: beige;
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
 }
 
-a {
-    text-decoration: none;
+#note-table {
+    color: rgb(175, 175, 169);
+    text-align: center;
+    font-size: 15px;
 }
 
 .number {
     font-size: 25px;
     line-height: 1;
-    color: beige;
-}
-
-.number-1-8 {
-    font-size: 20px;
-    line-height: 1;
-    color: beige;
-}
-
-#note-text {
-    text-align: center;
-    font-size: 25px;
-    color: beige;
+    color: #EEEEEE;
 }
 
 .notes {
-    color: beige;
+    color: #EEEEEE;
     text-align: center;
     font-size: 25px;
+}
+
+.notes-text {
+    color: #9f9f9f;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Медиа-запросы для мобильных устройств */
@@ -278,15 +279,14 @@ a {
 
     /* Третий столбец растягивается по ширине */
     td:nth-child(3) {
-        text-align: center;
         background-color: #262626;
         padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-        width: 20%; /* Дает возможность столбцу растягиваться */
+        width: 35%; /* Дает возможность столбцу растягиваться */
+        text-align: center;
     }
 
-
     .number {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1;
         color: beige;
     }
@@ -373,8 +373,6 @@ a {
         text-align: center;
         font-size: 13px;
     }
-
-    
 
 }
 
@@ -497,19 +495,13 @@ a {
 
     /* Третий столбец растягивается по ширине */
     td:nth-child(3) {
-        text-align: center;
         background-color: #262626;
         padding: 5px auto; /* Отступы сверху/снизу и слева/справа */
-        width: 20%; /* Дает возможность столбцу растягиваться */
+        width: 35%; /* Дает возможность столбцу растягиваться */
+        text-align: center;
     }
 
     .number {
-        font-size: 18px;
-        line-height: 1;
-        color: beige;
-    }
-
-    .number-1-8 {
         font-size: 12px;
         line-height: 1;
         color: beige;
@@ -573,7 +565,7 @@ a {
     }
 
     .notes {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .notes-text {
@@ -592,15 +584,4 @@ a {
         font-size: 15px;
     }
     
-    #note-table {
-        color: rgb(175, 175, 169);
-        text-align: center;
-        font-size: 13px;
-    }
-
-    #note-text {
-        text-align: center;
-        font-size: 18px;
-        color: beige;
-    }
 }
