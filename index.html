@@ -571,5 +571,29 @@
     });
 </script>
 
+<script>
+    // Получаем элементы
+    const profileContainer = document.getElementById('profileContainer');
+    const miniProfile = document.getElementById('miniProfile');
+
+    // Функция для показа и скрытия мини-профиля
+    profileContainer.addEventListener('click', function (e) {
+        e.stopPropagation(); // Останавливаем всплытие события
+        miniProfile.style.display = miniProfile.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Закрытие мини-профиля при клике вне его области
+    document.addEventListener('click', function () {
+        if (miniProfile.style.display === 'block') {
+            miniProfile.style.display = 'none';
+        }
+    });
+
+    // Предотвращение закрытия мини-профиля при клике внутри него
+    miniProfile.addEventListener('click', function (e) {
+        e.stopPropagation();
+    });
+</script>
+
 </body>
 </html>
