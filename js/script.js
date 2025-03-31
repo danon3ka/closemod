@@ -1162,6 +1162,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <p class="tab-indent"><span class="circle orange"></span> Невыполнение минимальной нормы ветки;</p>
                             <p class="tab-indent"><span class="circle orange"></span> Бездействие на посту в сети;</p>
                             <p class="tab-indent"><span class="circle orange"></span> Использование кнопки "Добавить зрителя" без разрешения.</p>
+                            <p class="tab-indent"><span class="circle red"></span> Злоупотребление тех. паузой.</p>
                             <!--
                             <p class="tab-indent"> </p>
                             -->
