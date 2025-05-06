@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="c-red">Как отправить на проверку?: </p>
                         <p class="tab-indent"><span class="bg-color-commands">/проверка ID Жалоба пользователя</span> в канале <span class="bg-color-channels"># 💻┇проверка-на-читы</span>.</p>
                         <p class="c-red">Как выдать блокировку?: </p>
-                        <p class="tab-indent"><span class="bg-color-commands">/ban ID 1d До проверки на читы</span> в канале <span class="bg-color-channels"># ✏・запись</span> или <span class="bg-color-channels"># 🔧┇для-клоз-команд</span>.</p>
+                        <p class="tab-indent"><span class="bg-color-commands">/ban ID 1d 1.17 на читы</span> в канале <span class="bg-color-channels"># ✏・запись</span> или <span class="bg-color-channels"># 🔧┇для-клоз-команд</span>.</p>
                         
                         <div class="bg-notes-frame">
                             <strong>Так же стоить помнить</strong> , что в случае успешного прохождения проверки <span class="c-orange">блокировку</span> с пользователя <span class="c-orange">необходимо снять.</span> Для этого стоит обратиться к человеку от роли <span class="bg-color-nastavnik">@• Наставник</span> или выше.
